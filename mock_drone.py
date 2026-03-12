@@ -17,7 +17,7 @@ drone = mavutil.mavlink_connection('udpout:127.0.0.1:14550', source_system=1, so
 
 # --- THE GCS HASHING MECHANISM (From the Academic Paper) ---
 
-# 1. A normal human password (must be inside your words.py wordlist!)
+# 1. A normal human password (must be inside words.py wordlist for the dictionary attack to succeed)
 HUMAN_PASSWORD = "ardupilot"
 
 # 2. Hash the password with SHA-256 to create the 32-byte MAVLink key
