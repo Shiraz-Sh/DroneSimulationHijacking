@@ -69,7 +69,7 @@ while True:
     if msg and msg.get_type() == 'COMMAND_LONG':
         print(f"\n[INCOMING] Received Command ID: {msg.get_msgId()} from System {msg.get_srcSystem()}")
         print(" -> [FIREWALL PASSED] Cryptographic signature matches the password!")
-        print(" -> [DRONE STATE] Executing Disarm. Drone Crashing!")
+        print(" -> [DRONE STATE] Got a malicious message - resulting in drone crashing!")
         print("-----------------------------------------------------")
             
     time.sleep(0.01)
