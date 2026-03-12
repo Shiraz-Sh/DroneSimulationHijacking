@@ -1,4 +1,3 @@
-# IMPORT THE BETTER ATTACK
 from dictionaryAttack import dictionary_attack
 from words import generate_wordlist
 
