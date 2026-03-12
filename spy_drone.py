@@ -41,7 +41,7 @@ def packet_callback(packet):
                             print(f"\n[SNIFFER] WARNING: Message {msg.get_type()} is SIGNED! (Key is active)")
                             print("[SNIFFER] Capturing packet and initiating Dictionary Attack...")
 
-                            # Feed the raw bytes we captured into your cracker
+                            # Feed the raw bytes we captured into the cracker
                             recovered_key = crack(raw_data)
 
                             if recovered_key:
